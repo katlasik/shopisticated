@@ -25,12 +25,16 @@ export const actions = {
     backend.get('orders')
     .then((response) => {
       commit('FETCH_ORDERS', response.data)
+    }).catch(() => {
+      events.$emit('notify', 'Sorry, we have problems with our service. Maybe try in second?', 'error')
     })
   },
   fetchItems ({ commit, state }) {
     backend.get('items')
     .then((response) => {
       commit('FETCH_ITEMS', response.data)
+    }).catch(() => {
+      events.$emit('notify', 'Sorry, we have problems with our service. Maybe try in second?', 'error')
     })
   },
   purchase({commit}, {item, quantity}) {

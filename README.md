@@ -1,6 +1,6 @@
-# shopisticated-frontend
+# shopisticated-backend
 
-> Shopisticated frontend application
+> Shopisticated backend application
 
 ## Build Setup
 
