@@ -1,22 +1,11 @@
-# shopisticated-frontend
+# shopisticated-backend
 
-> Shopisticated frontend application
+> Shopisticated backend application
 
 ## Build Setup
 
-``` bash
-# install dependencies
-npm install
+#### start in dev mode at [http://localhost:8786]()
+`gradlew bootRun`
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run all tests
-npm test
-```
+#### build
+`gradlew build`
