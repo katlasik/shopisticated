@@ -1,0 +1,48 @@
+
+= Shopisticated REST endpoints
+<krzysztof.atlasik@protonmail.com>
+:toc: left
+:sectnums:
+
+== GET items
+
+=== Request example
+
+include::{docdir}/items/GET/http-request.adoc[]
+
+=== Fields description
+
+include::{docdir}/items/GET/response-fields.adoc[]
+
+=== Response example
+
+include::{docdir}/items/GET/http-response.adoc[]
+
+== GET orders
+
+=== Request example
+
+include::{docdir}/orders/GET/http-request.adoc[]
+
+=== Fields description
+
+include::{docdir}/orders/GET/response-fields.adoc[]
+
+=== Response example
+
+include::{docdir}/orders/GET/http-response.adoc[]
+
+== POST order
+
+=== Request example
+
+include::{docdir}/orders/POST/http-request.adoc[]
+
+=== Fields description
+
+include::{docdir}/orders/POST/response-fields.adoc[]
+
+=== Response example
+
+include::{docdir}/orders/POST/http-response.adoc[]
+

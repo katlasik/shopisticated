@@ -1,0 +1,6 @@
+server:
+  port: 8787
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
