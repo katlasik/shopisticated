@@ -15,11 +15,11 @@ class ItemControllerTest extends AbstractControllerSpec {
 
     def "should return correct list of resources"() {
         when:
-        def result = mockMvc.perform(get('/items/GET'))
+        def result = mockMvc.perform(get('/items'))
         then:
         result
                 .andExpect(status().isOk())
-                .andDo(document('items', preprocessResponse(prettyPrint()),
+                .andDo(document('items/GET', preprocessResponse(prettyPrint()),
                 responseFields(
                         fieldWithPath("[].id")
                                 .type(JsonFieldType.STRING)
