@@ -2,3 +2,7 @@ logs/*
 !logs/.keep
 
 .gradle
+
+#IDEA
+.idea/
+shopisticated.iml
