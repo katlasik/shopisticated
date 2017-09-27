@@ -15,7 +15,7 @@ public class StockUtils {
     }
 
     public static Item checkAvailable(@NonNull Item item, int quantity) {
-        if(item.getAvailable() - quantity < 0) {
+        if (item.getAvailable() - quantity < 0) {
             throw new UnsufficientItemsException();
         }
         return item;

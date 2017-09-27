@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Repository
-public class OrderRepository{
+public class OrderRepository {
 
     @VisibleForTesting
     final List<Order> orders = Lists.newArrayList();

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Repository
-public class ItemRepository{
+public class ItemRepository {
 
     @VisibleForTesting
     final List<Item> items = Lists.newArrayList(ImmutableList
@@ -50,7 +50,7 @@ public class ItemRepository{
     public Item save(Item entity) {
 
         val item = items.stream()
-        .filter(i -> i.getId().equals(entity.getId()))
+            .filter(i -> i.getId().equals(entity.getId()))
             .findFirst()
             .orElseThrow(UnknownItemException::new);
 

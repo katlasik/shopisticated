@@ -18,6 +18,9 @@ apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'org.asciidoctor.convert'
+apply plugin: "findbugs"
+apply plugin: 'pmd'
+apply plugin: 'checkstyle'
 apply plugin: "jacoco"
 
 version = '0.1.0'
@@ -49,6 +52,11 @@ dependencies {
 	testCompile "org.spockframework:spock-spring:${spockVersion}"
 }
 
+checkstyle {
+    project.ext.checkstyleVersion = '8.2'
+}
+
+
 bootRun {
 	systemProperties = System.properties
 }
@@ -71,3 +79,12 @@ jacocoTestReport {
 		html.destination file("${buildDir}/reports/jacoco")
 	}
 }
+
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+findbugsTest.enabled = false
