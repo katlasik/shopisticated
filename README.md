@@ -2,9 +2,11 @@
 
 > Shopisticated application
 
+Example application using Spring Boot on backend and Vue.js on frontend.
+
 ## Build Setup
 
-Copliation and deployment scripts expects that you have `java` in version 8 or above as executable in path.
+Compliation and deployment scripts expects that you have `java` in version 8 or above as executable in path.
 Compile script expect additionally `npm`.
 
 ##### Compile project
